@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_2"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="khan.lab03_sec_a_api_19.Activity2">
+
+    <TextView
+        android:id="@+id/SongName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="40dp"/>
+
+
+    <TextView
+        android:id="@+id/timeShow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"/>
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekBar" />
+
+    <LinearLayout
+        android:gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/play_resume"
+            android:onClick="setPlay_resume"
+            android:background="@drawable/ic_media_play"
+            android:layout_margin="15dp"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content" />
+<Button
+            android:id="@+id/replay_reset"
+            android:onClick="setReplay_reset"
+            android:background="@drawable/replay"
+            android:layout_margin="15dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+        <ImageView
+            android:layout_marginTop="20dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/volume"/>
+        <SeekBar
+            android:id="@+id/volumeBar"
+            android:layout_marginTop="30dp"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
